@@ -1,0 +1,22 @@
+name: Cypress Tests
+on: 
+    pull_request:
+        branches: [main]
+
+    #push: 
+        #branches: [create_pipeline]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: f64d25c5-c2e6-46c0-980f-c80343db2396
