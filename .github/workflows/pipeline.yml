@@ -20,4 +20,4 @@ jobs:
         env:
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
-          CYPRESS_RECORD_KEY: $f64d25c5-c2e6-46c0-980f-c80343db2396
+          CYPRESS_RECORD_KEY: f64d25c5-c2e6-46c0-980f-c80343db2396
